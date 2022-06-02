@@ -1,19 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fork Pull Project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="index.js"></script>
     <style>
-        #pointer{
+        #pointer {
             position: absolute;
         }
+
+        body, html {
+            margin: 0;
+        }
+
+        :root {
+            --bg-color: #2E3D4B;
+            --text-color: #6AE3FF;
+        }
+
+        .container {
+            min-width: 400px;
+            height: 100vh;
+            align-items: center;
+            box-sizing: border-box;
+            background: var(--bg-color);
+            padding: 50px;
+        }
+
+        .typewriter {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 56px;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .typewriter span {
+            color: var(--text-color);
+            text-transform: uppercase;
+            padding: 10px;
+            border-right: solid var(--text-color) 10px;
+            animation: cursor 1s ease-in-out infinite;
+        }
+
+        @keyframes cursor {
+            from { border-color: var(--text-color); }
+            to { border-color: transparent; }
+        }
+
+        @media (max-width: 576px) {
+            .typewriter { font-size: 24px; }
+        }
+        @media (max-width: 768px) {
+            .typewriter { font-size: 36px; }
+        }
     </style>
-    <script defer src="js/main.js"></script>
 </head>
+
 <body>
-    <div id="pointer">This is a fork pull</div>
+<div id="pointer">This is fork pull</div>
 </body>
+
+
+
+<div class="container">
+    <p class="typewriter">
+        <span data-text="Lahiru., was, there !"></span>
+    </p>
+</div>
+
+
+
 </html>
